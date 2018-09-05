@@ -52,6 +52,5 @@ public class ageInSeconds{
         percent = (days/2500000000.0)*100;
         System.out.println("You have been alive " + days + " seconds");
         System.out.println("You have lived " + percent + " percent of your life");
-
     }
 }
