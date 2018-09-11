@@ -15,11 +15,17 @@ public class exercise3{
         System.out.println("Yo whats the word again?");
         word2 = scan.nextLine();
 
-        spaces = 30 - word1.length() + word2.length();
+        spaces = 30 - (word1.length() + word2.length());
+
+        System.out.println(spaces);
+
+        System.out.print(word1);
 
         while (spaces > 1) {
             System.out.print(".");
             spaces--;
         }
+
+        System.out.print(word2);
     }
 }
