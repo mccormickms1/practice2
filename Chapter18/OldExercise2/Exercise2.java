@@ -15,15 +15,25 @@ public class Exercise2 {
 
         while (active) {
             System.out.println("Initial miles:");
-            intialMiles = scan.nextInt();
-            
-            System.out.println("Final miles:");
-            finalMiles = scan.nextInt();
-            
-            System.out.println("Gallons:");
-            gallons = scan.nextInt();
+            initialMiles = scan.nextInt();
 
-            milesPerGallon = 
+            if (initialMiles >= 0) {
+            
+                System.out.println("Final miles:");
+                finalMiles = scan.nextInt();
+            
+                System.out.println("Gallons:");
+                gallons = scan.nextInt();
+
+                milesPerGallon = (finalMiles - initialMiles)/gallons;
+
+                System.out.println("Miles per Gallon: " + milesPerGallon);
+                System.out.println("");
+            
+            } else {
+                active = false;
+                System.out.println("bye");
+            }
         }
     }
 }
