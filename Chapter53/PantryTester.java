@@ -13,18 +13,19 @@ public class PantryTester
     Jam rhub  = new Jam( "Rhubarb", "10/31/99", 3 );
 
     Pantry hubbard = new Pantry( goose, apple, rhub );
+    Pantry pizzaPantry = new Pantry( goose, apple, null);
     
     System.out.println("Welcome to Mother Hubbard's Pantry!");
 
     while (doorOpen) {
         System.out.println("The jams are:");
-        System.out.println( hubbard );
+        System.out.println( pizzaPantry );
         System.out.println("Enter your selection (1, 2, or 3)");
         int c = scan.nextInt();
         if (c >= 1 && c <= 3) {
-            hubbard.select(c);
+            pizzaPantry.select(c);
             System.out.println("Enter amount to be spread:");
-            hubbard.spread(scan.nextInt());
+            pizzaPantry.spread(scan.nextInt());
         } else if (c < 1) {
             doorOpen = false;
             System.out.println("Good-by");

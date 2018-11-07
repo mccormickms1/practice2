@@ -15,6 +15,22 @@ public class Pantry
     selected = null ;
   }
 
+  Pantry( Jam jar1)
+  {
+    this . jar1 = jar1 ;
+    this . jar2 = null ;
+    this . jar3 = null ;
+    selected = null ;
+  }
+
+  Pantry( Jam jar1, Jam jar2)
+  {
+    this . jar1 = jar1 ;
+    this . jar2 = jar2 ;
+    this . jar3 = null ;
+    selected = null ;
+  }
+
   // Methods
   public String toString()
   {
